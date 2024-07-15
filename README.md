@@ -2,7 +2,7 @@
 To run the application , download the Myntra folder.
 In the fashion_communities_backend folder , install nodejs,express,mongoose using the following commands:
 npm init , 
-npm i mongodb express body-parser .
+npm i mongoose express body-parser .
 After that run "node index.js" in the command prompt.
 Make sure the location is fashion_communities_backend.
 Go to browser and go to "localhost:3000"

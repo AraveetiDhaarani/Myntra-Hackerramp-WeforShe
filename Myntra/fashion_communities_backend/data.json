@@ -1,0 +1,12 @@
+[
+    { "hashtags": "#Bohemian #Fashion #Trendy", "likes": 150, "image": "bohemian1.jpg" },
+    { "hashtags": "#Bohemian #Style #Art", "likes": 120, "image": "bohemian2.jpg" },
+    { "hashtags": "#Minimalist #Fashion #Chic", "likes": 80, "image": "minimalist1.jpg" },
+    { "hashtags": "#Minimalist #Style #Simple", "likes": 200, "image": "minimalist2.jpg" },
+    { "hashtags": "#Streetstyle #Fashion #Urban", "likes": 300, "image": "streetstyle1.jpg" },
+    { "hashtags": "#Retro #Fashion #Vintage", "likes": 180, "image": "retro1.jpg" },
+    { "hashtags": "#Retro #Style #Nostalgia", "likes": 250, "image": "retro2.jpg" },
+    { "hashtags": "#Bohemian #Fashion #FreeSpirit", "likes": 220, "image": "bohemian3.jpg" },
+    { "hashtags": "#Minimalist #Fashion #Elegant", "likes": 150, "image": "minimalist3.jpg" },
+    { "hashtags": "#Streetstyle #Fashion #Casual", "likes": 280, "image": "streetstyle2.jpg" }
+]

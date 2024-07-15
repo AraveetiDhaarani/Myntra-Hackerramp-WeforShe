@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Communities</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Fashion Communities</div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search..." onkeyup="filterGroups()">
+        </div>
+        <div class="profile">
+            <img src="profile-pic.jpg" alt="User Profile">
+        </div>
+        
+    </header>
+    
+    <main>
+        <section class="groups" id="groups-container">
+            <div class="group">
+                <img src="streetstyle.jpg" alt="Streetstyle">
+                <h2>Streetstyle</h2>
+                <p>Discover the latest in urban fashion and trends.</p>
+                <button onclick="navigateToStreetStyle()">Explore</button>
+            </div>
+            <div class="group">
+                <img src="retro.jpg" alt="Retro">
+                <h2>Retro</h2>
+                <p>Step back in time with vintage-inspired looks.</p>
+                <button onclick="navigateToRetro()">Explore</button>
+            </div>
+            <div class="group">
+                <img src="bohemian.jpeg" alt="Bohemian">
+                <h2>Bohemian</h2>
+                <p>Embrace free-spirited and eclectic styles.</p>
+                <button onclick="navigateToBohemain()">Explore</button>
+            </div>
+            <div class="group">
+                <img src="minimalist.avif" alt="Minimalist">
+                <h2>Minimalist</h2>
+                <p>Find beauty in simplicity and clean lines.</p>
+                <button onclick="navigateToMinimalist()">Explore</button>
+            </div>
+        </section>
+        <p id="no-results" style="display:none;">No groups found</p>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Myntra. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function navigateToBohemain() {
+            window.location.href = 'bohemian.html';
+        }
+        function navigateToMinimalist() {
+            window.location.href = 'minimalist.html';
+        }
+        function navigateToRetro() {
+            window.location.href = 'retro.html';
+        }
+        function navigateToStreetStyle() {
+            window.location.href = 'streetstyle.html';
+        }
+
+        function filterGroups() {
+            const input = document.getElementById('search-input').value.toLowerCase();
+            const groups = document.querySelectorAll('.group');
+            let anyVisible = false;
+
+            groups.forEach(group => {
+                const title = group.querySelector('h2').textContent.toLowerCase();
+                const description = group.querySelector('p').textContent.toLowerCase();
+
+                if (title.includes(input) || description.includes(input)) {
+                    group.style.display = 'block';
+                    anyVisible = true;
+                } else {
+                    group.style.display = 'none';
+                }
+            });
+
+            document.getElementById('no-results').style.display = anyVisible ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
